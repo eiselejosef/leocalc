@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LeoCalc</string>
+    <string name="dummy_button">Fertig</string>
+    <string name="dummy_content"></string>
+    <string name="button_enter">FERTIG !!</string>
+
+</resources>
