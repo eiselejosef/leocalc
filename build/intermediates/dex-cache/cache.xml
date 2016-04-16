@@ -1,19 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/tzheijo2/src/LeoCalc/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="1fda26a64f097aaeb4dfe9d792b48d2b5757339b">
-        <dex dex="/Users/tzheijo2/src/LeoCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bbfce903114b0ce5fc5685da566ce462b9ef5e34/classes.dex" />
-    </item>
-    <item
-        jar="/Users/tzheijo2/src/LeoCalc/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="22.0.1"
-        sha1="d66f9cc4dc0b0e0f4e148a5034c06bbe507f1444">
-        <dex dex="/Users/tzheijo2/src/LeoCalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cd828da06e3d4cb3b07eb19797a5d8ffdf64acfb/classes.dex" />
-    </item>
-
-</items>
+<items version="2" />
