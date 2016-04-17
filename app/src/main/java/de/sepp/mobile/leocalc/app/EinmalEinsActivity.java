@@ -1,12 +1,18 @@
 package de.sepp.mobile.leocalc.app;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -29,9 +35,17 @@ public class EinmalEinsActivity extends Activity {
         final TextView tvFormel = (TextView) findViewById(R.id.textViewFormular);
         tvFormel.setText(generateFormularMulti());
 
-        final TextView tvResult = (TextView) findViewById(R.id.editViewResult);
+        final EditText tvResult = (EditText) findViewById(R.id.editViewResult);
         final TextView tvCount = (TextView) findViewById(R.id.countSuccess);
         tvResult.setText("");
+        // to always show soft keyboard
+        (new Handler()).postDelayed(new Runnable() {
+            public void run() {
+                tvResult.dispatchTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(), SystemClock.uptimeMillis(), MotionEvent.ACTION_DOWN , 0, 0, 0));
+                tvResult.dispatchTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(), SystemClock.uptimeMillis(), MotionEvent.ACTION_UP , 0, 0, 0));
+            }
+        }, 200);
+
 
         final Chronometer timer = (Chronometer) findViewById(R.id.chronometer);
         timer.stop();
@@ -79,6 +93,7 @@ public class EinmalEinsActivity extends Activity {
         });
 
     }
+
 
     private boolean doCalc(String formel, long result) {
 

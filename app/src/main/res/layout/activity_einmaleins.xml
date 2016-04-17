@@ -23,7 +23,7 @@
     <FrameLayout android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        android:layout_gravity="right|center_vertical">
+        android:layout_gravity="right|top">
 
         <LinearLayout android:id="@+id/fullscreen_content_controls"
             style="?metaButtonBarStyle"
@@ -34,17 +34,10 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
-            <Button android:id="@+id/button_enter"
-                style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/button_enter" />
-
         </LinearLayout>
 
        <TextView
-            android:layout_width="176dp"
+            android:layout_width="257dp"
             android:layout_height="100dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Formel"
@@ -85,6 +78,17 @@
             android:id="@+id/chronometer"
             android:layout_gravity="center_horizontal|top"
             android:paddingTop="100dp" />
+
+        <Button android:id="@+id/button_enter"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="103dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="@string/button_enter"
+            android:layout_gravity="right|top"
+            android:background="@android:color/holo_green_light"
+            android:singleLine="true"
+            android:textAlignment="viewEnd" />
 
     </FrameLayout>
 
