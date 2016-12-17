@@ -3,6 +3,8 @@ package de.sepp.mobile.leocalc.app;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -21,6 +23,7 @@ import java.util.Random;
 public class EinmalEinsActivity extends Activity {
 
     private static final int MAX_VALUE = 100;
+    private static final int SUCCESS_VALUE = 3;
     private int count_success = 0;
 
     @Override
@@ -75,8 +78,22 @@ public class EinmalEinsActivity extends Activity {
                     contentView.setBackgroundColor(Color.GREEN);
                     tvCount.setText("" + ++count_success);
 
-                    if (count_success >= 10) {
+                    if (count_success >= SUCCESS_VALUE) {
                         tvFormel.setText("SUPER !!!");
+                        // Sound
+                        MediaPlayer mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.oleole);
+                        mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                        mPlayer.start();
+
+                        mPlayer.setOnCompletionListener(
+                                new MediaPlayer.OnCompletionListener() {
+                                    @Override
+                                    public void onCompletion(MediaPlayer arg0) {
+                                        finish();
+                                        startActivity(getIntent());
+                                    }
+                                }
+                        );
                         timer.stop();
                     } else {
                         finish();

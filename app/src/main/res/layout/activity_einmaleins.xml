@@ -77,7 +77,8 @@
             android:layout_height="122dp"
             android:id="@+id/chronometer"
             android:layout_gravity="center_horizontal|top"
-            android:paddingTop="100dp" />
+            android:paddingTop="100dp"
+            android:visibility="invisible" />
 
         <Button android:id="@+id/button_enter"
             style="?metaButtonBarButtonStyle"
