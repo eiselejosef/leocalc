@@ -44,8 +44,8 @@ public class EinmalEinsActivity extends Activity {
         // to always show soft keyboard
         (new Handler()).postDelayed(new Runnable() {
             public void run() {
-                tvResult.dispatchTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(), SystemClock.uptimeMillis(), MotionEvent.ACTION_DOWN , 0, 0, 0));
-                tvResult.dispatchTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(), SystemClock.uptimeMillis(), MotionEvent.ACTION_UP , 0, 0, 0));
+                tvResult.dispatchTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(), SystemClock.uptimeMillis(), MotionEvent.ACTION_DOWN, 0, 0, 0));
+                tvResult.dispatchTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(), SystemClock.uptimeMillis(), MotionEvent.ACTION_UP, 0, 0, 0));
             }
         }, 200);
 
@@ -58,7 +58,7 @@ public class EinmalEinsActivity extends Activity {
             count_success = getIntent().getExtras().getInt("count_success");
             tvCount.setText("" + count_success);
 
-            if ( getIntent().getExtras().getLong("timer") != 0) {
+            if (getIntent().getExtras().getLong("timer") != 0) {
                 timer.setBase(getIntent().getExtras().getLong("timer"));
             }
         }
