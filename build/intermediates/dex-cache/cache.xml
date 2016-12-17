@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/tzheijo2/src/leocalc/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="0423daf6a87a1a6d60d59912e9cec76504c7235e">
-        <dex dex="/Users/tzheijo2/src/leocalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fdadff049e74cf8c4355dee7bc12b4c8df0114b2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/tzheijo2/src/leocalc/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="1afa01fd66d1e9bd2e193a2d49fb95aad3447c83">
+        sha1="76b86081caf06d4afd1e34197b142dcca7af0886">
         <dex dex="/Users/tzheijo2/src/leocalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0fd074fc136256aa54b3a86cea1e9809d34eb1e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tzheijo2/src/leocalc/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d99c3259bafa36000f8c762beacc9e50a776902d">
+        <dex dex="/Users/tzheijo2/src/leocalc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fdadff049e74cf8c4355dee7bc12b4c8df0114b2/classes.dex" />
     </item>
 
 </items>

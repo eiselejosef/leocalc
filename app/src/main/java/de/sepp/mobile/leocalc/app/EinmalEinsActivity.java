@@ -20,7 +20,7 @@ import java.util.Random;
 
 public class EinmalEinsActivity extends Activity {
 
-    private static final int MAX_VALUE = 10;
+    private static final int MAX_VALUE = 100;
     private int count_success = 0;
 
     @Override
