@@ -235,8 +235,8 @@ public class FullscreenActivity extends Activity {
 
     private String generateFormularAddition() {
         Random randomGenerator = new Random();
-        String summand1 = String.valueOf(randomGenerator.nextInt(200));
-        String summand2 = String.valueOf(randomGenerator.nextInt(200));
+        String summand1 = String.valueOf(randomGenerator.nextInt(20));
+        String summand2 = String.valueOf(randomGenerator.nextInt(20));
 
         // 34 + 12 =
         return summand1 + " + " + summand2 + " =";
@@ -244,11 +244,11 @@ public class FullscreenActivity extends Activity {
 
     private String generateFormularSubtraction() {
         Random randomGenerator = new Random();
-        String minuend = String.valueOf(randomGenerator.nextInt(200));
-        String subtrahend = String.valueOf(randomGenerator.nextInt(200));
+        String minuend = String.valueOf(randomGenerator.nextInt(20));
+        String subtrahend = String.valueOf(randomGenerator.nextInt(20));
         while (Integer.parseInt(minuend) < Integer.parseInt(subtrahend)) {
-            minuend = String.valueOf(randomGenerator.nextInt(200));
-            subtrahend = String.valueOf(randomGenerator.nextInt(200));
+            minuend = String.valueOf(randomGenerator.nextInt(20));
+            subtrahend = String.valueOf(randomGenerator.nextInt(20));
         }
 
         // 34 - 12 =
