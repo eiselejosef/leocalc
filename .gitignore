@@ -3,5 +3,6 @@
 /.idea/workspace.xml
 .DS_Store
 .idea
+build
 LeoCalc.iml
 app.iml
